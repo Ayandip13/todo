@@ -28,6 +28,11 @@ const TodoScreen = () => {
   //function to add todo into the list by pressing add button
   const handleAddTodo = () => {
     setTodoList([...todoList, { id: Date.now().toString(), title: todo }]); //This '...todoList' spreads the existing todoList array into a new array, ensuring we don't directly modify the state.
+    setTodo("");
+  };
+
+  const handleDeleteTodo = (id) => {
+    
   };
 
   // items that we're gonna render inside flatlist to show
@@ -56,7 +61,11 @@ const TodoScreen = () => {
         >
           {item.title}
         </Text>
-        <IconButton icon="trash-can" iconColor="#fff" />
+        <IconButton
+          icon="trash-can"
+          iconColor="#fff"
+          onPress={() => handleDeleteTodo(item.id)}
+        />
       </View>
     );
   };
