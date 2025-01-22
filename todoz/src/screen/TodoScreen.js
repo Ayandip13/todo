@@ -6,8 +6,8 @@ import {
   TouchableOpacity,
   FlatList,
 } from "react-native";
-import React from "react";
-import {iconButton} from 'react-native-paper' 
+import React, { useState } from "react";
+import { IconButton, iconButton } from "react-native-paper";
 
 const dummyData = [
   {
@@ -21,9 +21,16 @@ const dummyData = [
 ];
 
 const TodoScreen = () => {
+  // initialize the local state
+  const [todo, setTodo] = useState("");
+  const [todoList, setTodoList] = useState([]);
 
-  // items that we're gonna render inside flatlist to show 
+  //function to add todo into the list by pressing add button
+  const handleAddTodo = () => {
+    setTodoList([...todoList, { id: Date.now().toString(), title: todo }]); //This '...todoList' spreads the existing todoList array into a new array, ensuring we don't directly modify the state.
+  };
 
+  // items that we're gonna render inside flatlist to show
   const renderTodos = ({ item }) => {
     return (
       <View
@@ -31,17 +38,28 @@ const TodoScreen = () => {
           backgroundColor: "#1e90ff",
           borderRadius: 8,
           marginBottom: 12,
+          alignItems: "center",
+          justifyContent: "space-between",
           paddingVertical: 12,
           paddingHorizontal: 8,
+          flexDirection: "row",
         }}
       >
-        <Text style={{ color: "white", textAlign:'center', fontSize:20, fontWeight:400}}>
+        <IconButton iconColor="#fff" icon="pencil" />
+        <Text
+          style={{
+            color: "white",
+            textAlign: "center",
+            fontSize: 20,
+            fontWeight: 400,
+          }}
+        >
           {item.title}
         </Text>
+        <IconButton icon="trash-can" iconColor="#fff" />
       </View>
     );
   };
-
 
   return (
     <SafeAreaView style={{ marginHorizontal: 15 }}>
@@ -55,6 +73,8 @@ const TodoScreen = () => {
           paddingHorizontal: 16,
         }}
         placeholder="Add a Task"
+        value={todo}
+        onChangeText={(e) => setTodo(e)}
       />
       <TouchableOpacity
         style={{
@@ -64,6 +84,7 @@ const TodoScreen = () => {
           marginVertical: 30,
           alignItems: "center",
         }}
+        onPress={handleAddTodo}
         activeOpacity={0.7}
       >
         <Text style={{ color: "white", fontWeight: "bold", fontSize: 20 }}>
@@ -71,7 +92,7 @@ const TodoScreen = () => {
         </Text>
       </TouchableOpacity>
 
-      <FlatList data={dummyData} renderItem={renderTodos} />
+      <FlatList data={todoList} renderItem={renderTodos} />
     </SafeAreaView>
   );
 };
