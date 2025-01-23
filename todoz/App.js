@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import TodoScreen from "./src/screen/TodoScreen";
 
 export default function App() {
@@ -11,5 +10,3 @@ export default function App() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({});
