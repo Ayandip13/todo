@@ -7,7 +7,7 @@ export default function App() {
     <SafeAreaView>
       <View>
         {/* <TodoScreen /> */}
-        <NewTodo/>
+        {/* <NewTodo/> */}
       </View>
     </SafeAreaView>
   );
