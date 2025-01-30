@@ -20,7 +20,7 @@ const AllPort = () => {
           style={{ marginRight: -3, marginTop: -5 }}
           name="pin-outline"
           size={22}
-          color="white"
+          color="#DFF2EB"
         />
         <Text style={styles.originDetailsText}>Naihati,India</Text>
 
@@ -28,20 +28,22 @@ const AllPort = () => {
           style={{ marginRight: -1, marginTop: -5, marginLeft: 5 }}
           name="arrow-up"
           size={20}
-          color="white"
+          color="#DFF2EB"
         />
-        <Text style={{ fontSize: 20, color: "white", marginLeft: 2 }}>
+        <Text style={{ fontSize: 20, color: "#DFF2EB", marginLeft: 2 }}>
           Joined on Dec 29, 2024
         </Text>
       </View>
 
+      <View style={{backgroundColor:'#DFF2EB', height:0.5, width:280, marginTop:20}}/>
+
       <View style={styles.socialCards}>
         <View style={styles.emailCard}>
-          <Ionicons name="mail" size={35} color="white" />
+          <Ionicons name="mail" size={35} color="#DFF2EB" />
           <Text
             style={{
               marginTop: 7,
-              color: "white",
+              color: "#DFF2EB",
               fontWeight: "800",
               fontSize: 18,
             }}
@@ -56,7 +58,7 @@ const AllPort = () => {
             }
             style={{
               marginTop: 3,
-              color: "white",
+              color: "#DFF2EB",
               fontWeight: "600",
               fontSize: 12,
               textDecorationLine: "underline",
@@ -66,11 +68,11 @@ const AllPort = () => {
           </Text>
         </View>
         <View style={styles.facebookCard}>
-          <Ionicons name="logo-facebook" color="white" size={30} />
+          <Ionicons name="logo-facebook" color="#DFF2EB" size={30} />
           <Text
             style={{
               marginTop: 9,
-              color: "white",
+              color: "#DFF2EB",
               fontWeight: "800",
               fontSize: 18,
             }}
@@ -85,13 +87,108 @@ const AllPort = () => {
             }
             style={{
               marginTop: 6,
-              color: "white",
+              color: "#DFF2EB",
               fontWeight: "600",
               fontSize: 12,
               textDecorationLine: "underline",
             }}
           >
             @ayandip_paul
+          </Text>
+        </View>
+      </View>
+
+      <View style={styles.socialCards}>
+        <View style={styles.gitHubCard}>
+          <Ionicons name="logo-github" size={35} color="#DFF2EB" />
+          <Text
+            style={{
+              marginTop: 7,
+              color: "#DFF2EB",
+              fontWeight: "800",
+              fontSize: 18,
+            }}
+          >
+            GitHub
+          </Text>
+          <Text
+            onPress={() =>
+              Linking.openURL(
+                "https://github.com/Ayandip13"
+              )
+            }
+            style={{
+              marginTop: 3,
+              color: "#DFF2EB",
+              fontWeight: "600",
+              fontSize: 12,
+              textDecorationLine: "underline",
+            }}
+          >
+            Click to Open GitHub
+          </Text>
+        </View>
+      </View>
+
+      <View style={styles.socialCards}>
+        <View style={styles.LinkdinCard}>
+          <Ionicons name="logo-linkedin" size={35} color="#DFF2EB" />
+          <Text
+            style={{
+              marginTop: 7,
+              color: "#DFF2EB",
+              fontWeight: "800",
+              fontSize: 18,
+            }}
+          >
+            Linkedin
+          </Text>
+          <Text
+            onPress={() =>
+              Linking.openURL(
+                "https://www.linkedin.com/in/ayandip-paul-a11258272/"
+              )
+            }
+            style={{
+              marginTop: 3,
+              color: "#DFF2EB",
+              fontWeight: "600",
+              fontSize: 12,
+              textDecorationLine: "underline",
+            }}
+          >
+            Click here to Visit linkedin
+          </Text>
+        </View>
+
+
+        <View style={styles.instagramCard}>
+          <Ionicons name="logo-instagram" size={35} color="#DFF2EB" />
+          <Text
+            style={{
+              marginTop: 7,
+              color: "#DFF2EB",
+              fontWeight: "800",
+              fontSize: 18,
+            }}
+          >
+            Instagram
+          </Text>
+          <Text
+            onPress={() =>
+              Linking.openURL(
+                "https://www.instagram.com/apaulfloyd13/"
+              )
+            }
+            style={{
+              marginTop: 3,
+              color: "#DFF2EB",
+              fontWeight: "600",
+              fontSize: 12,
+              textDecorationLine: "underline",
+            }}
+          >
+            Click to Visit Instagram
           </Text>
         </View>
       </View>
@@ -107,7 +204,7 @@ const styles = StyleSheet.create({
     marginTop: 28,
   },
   upperMainCardText: {
-    color: "white",
+    color: "#DFF2EB",
     marginTop: 5,
     fontSize: 15,
   },
@@ -119,7 +216,7 @@ const styles = StyleSheet.create({
   },
   originDetailsText: {
     fontSize: 20,
-    color: "white",
+    color: "#DFF2EB",
   },
   socialCards: {
     flexDirection: "row",
@@ -143,4 +240,33 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingLeft: 12,
   },
+  gitHubCard: {
+    height: 90,
+    width: 284,
+    backgroundColor: "#25262F",
+    borderRadius: 15,
+    paddingTop: 8,
+    paddingLeft: 12,
+    flexDirection: "column",
+    marginRight: 3,
+  },
+  LinkdinCard:{
+    height: 190,
+    width: 133,
+    backgroundColor: "#155E95",
+    borderRadius: 15,
+    paddingTop: 8,
+    paddingLeft: 12,
+    flexDirection: "column",
+    marginRight:10
+  },
+  instagramCard:{
+    height: 140,
+    width: 130,
+    backgroundColor: "#7A07A3",
+    borderRadius: 15,
+    paddingTop: 8,
+    paddingLeft: 12,
+    flexDirection: "column",
+  }
 });

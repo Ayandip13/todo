@@ -10,20 +10,33 @@ import React, { useState } from "react";
 import { Linking } from "react-native";
 import AllPort from "./AllPort";
 import PhotosPort from "./PhotosPort";
+import ProjectsPort from "./ProjectsPort"
 
 const Portfolio = () => {
   const [allport, setAllport] = useState(false);
-  const [photosPort, setPhotosPort] = useState(false)
+  const [photosPort, setPhotosPort] = useState(false);
+  const [projectPort, setProjectsPort] = useState(false)
 
-  const photosportHandle = () =>{
-    setPhotosPort(true)
+  const photosportHandle = () => {
+    setPhotosPort(true);
+    setAllport(false);
+    setProjectsPort(false)
+  };
+
+  const allportHandle = () => {
+    setAllport(true);
+    setPhotosPort(false);
+    setProjectsPort(false)
+  };
+
+  const projectPortHandle = () => {
+    setProjectsPort(true)
     setAllport(false)
+    setPhotosPort(false)
   }
 
-  const allportHandle = () =>{
-    setAllport(true);
-    setPhotosPort(false)
-  };
+
+
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -33,7 +46,7 @@ const Portfolio = () => {
           source={require("../assets/download.jpg")}
         />
         <Text style={styles.nameText}>Ayandip Paul</Text>
-        <Text style={{ color: "#F4EDD3", fontSize: 20 }}>@Ayandip13</Text>
+        <Text style={{ color: "#DFF2EB", fontSize: 20, fontWeight:'thin' }}>@Ayandip13</Text>
         <View style={styles.iconsContainer}>
           <TouchableOpacity
             style={styles.styleIcon}
@@ -97,26 +110,25 @@ const Portfolio = () => {
             onPress={() => allportHandle()}
             style={styles.cardDetails}
           >
-            <Text style={{ color: "#F4EDD3", fontSize:18 }}>All</Text>
+            <Text style={{ color: "#DFF2EB", fontSize: 18 }}>All</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.cardDetails} onPress={()=>photosportHandle()}>
-            <Text style={{ color: "#F4EDD3", fontSize:18 }}>Photos</Text>
+          <TouchableOpacity
+            style={styles.cardDetails}
+            onPress={() => photosportHandle()}
+          >
+            <Text style={{ color: "#DFF2EB", fontSize: 18 }}>Photos</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.cardDetails}>
-            <Text style={{ color: "#F4EDD3", fontSize:18 }}>Music</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.cardDetails}>
-            <Text style={{ color: "#F4EDD3", fontSize:18 }}>Projects</Text>
+
+          <TouchableOpacity style={styles.cardDetails} onPress={()=>projectPortHandle()}>
+            <Text style={{ color: "#DFF2EB", fontSize: 18 }}>Projects</Text>
           </TouchableOpacity>
         </View>
 
 
-
-        {allport && <AllPort /> }
-        {photosPort && <PhotosPort/>}
-
-
+        {allport && <AllPort />}        
+        {photosPort && <PhotosPort />}
+        {projectPort && <ProjectsPort/>}
 
 
 
@@ -148,11 +160,10 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   nameText: {
-    color: "#F4EDD3",
+    color: "#DFF2EB",
     fontSize: 35,
     marginTop: 135,
-    fontFamily: "Arial",
-    fontWeight: "100",
+    fontWeight: "ultralight",
   },
   iconsContainer: {
     flexDirection: "row",
