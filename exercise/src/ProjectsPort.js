@@ -90,6 +90,28 @@ const ProjectsPort = () => {
           Click Here to Visit the github Repo
         </Text>
       </View>
+      <View style={styles.Cards}>
+        <Text style={{ fontSize: 20, textAlign: "center" }}>
+          {" "}
+          : Weather App :{" "}
+        </Text>
+        <Text
+          onPress={() =>
+            Linking.openURL(
+              "https://github.com/Ayandip13/todo/blob/master/exercise/src/Weather.js"
+            )
+          }
+          style={{
+            fontSize: 18,
+            marginTop: 10,
+            textAlign: "center",
+            color: "#DFF2EB",
+            textDecorationLine: "underline",
+          }}
+        >
+          Click Here to Visit the github Repo
+        </Text>
+      </View>
     </>
   );
 };

@@ -13,7 +13,7 @@ import PhotosPort from "./PhotosPort";
 import ProjectsPort from "./ProjectsPort"
 
 const Portfolio = () => {
-  const [allport, setAllport] = useState(false);
+  const [allport, setAllport] = useState(true);
   const [photosPort, setPhotosPort] = useState(false);
   const [projectPort, setProjectsPort] = useState(false)
 
