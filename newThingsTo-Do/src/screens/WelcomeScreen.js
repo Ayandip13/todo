@@ -58,7 +58,7 @@ const WelcomeScreen = ({navigation}) => {
         }}
       >
         <Text style={{ fontSize: 21, color: "#fff", fontWeight: "700" }}>
-          Lesss Gooo
+          Less Gooo..
         </Text>
       </TouchableOpacity>
 
