@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "recipe",
-    "slug": "recipe",
+    "name": "newThingsTo-Do",
+    "slug": "newThingsTo-Do",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
