@@ -11,7 +11,7 @@ const SearchFilter = ({ icon, placeholder }) => {
         flexDirection: "row",
         paddingVertical: 8,
         paddingHorizontal: 17,
-        marginVertical: 15,
+        marginVertical: 12,
         borderRadius:9,
         elevation:9
     }}

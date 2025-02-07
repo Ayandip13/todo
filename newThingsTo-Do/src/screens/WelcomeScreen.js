@@ -7,14 +7,14 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 
-const WelcomeScreen = ({navigation}) => {
+const WelcomeScreen = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
 
   const loadingHandle = () => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-        navigation.navigate("RecipeList")
-        setLoading(false)
+      navigation.navigate("RecipeList");
+      setLoading(false);
     }, 1000);
   };
 
