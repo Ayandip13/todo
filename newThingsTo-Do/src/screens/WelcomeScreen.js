@@ -21,7 +21,7 @@ const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: "center" }}>
       <Image
-        style={{ height: 300, width: 300, borderRadius: 300, marginTop: 200 }}
+        style={{ height: 300, width: 300, borderRadius: 300, marginTop: 150 }}
         source={require("../../assets/images/download.jpg")}
       />
       <Text
@@ -64,7 +64,7 @@ const WelcomeScreen = ({ navigation }) => {
 
       {loading && (
         <ActivityIndicator
-          style={{ marginTop: 30 }}
+          style={{ marginTop: 20 }}
           size={"large"}
           color={"#f96163"}
         />

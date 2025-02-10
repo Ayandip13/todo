@@ -20,6 +20,14 @@ export const recipeList = [
       "The combination of fresh tuna, zesty lime juice, and creamy avocado creates a burst of flavors.",
       "Ideal as an appetizer or a light meal, served with crispy crackers or toast.",
     ],
+    steps: [
+      "Dice the fresh tuna into small cubes.",
+      "Finely chop the red onion and dice the avocado.",
+      "In a bowl, mix the tuna, red onion, avocado, and lime juice.",
+      "Season with salt and pepper to taste.",
+      "Chill the mixture in the refrigerator for 20 minutes.",
+      "Serve with crispy crackers or toast.",
+    ],
   },
   {
     id: "02",
@@ -34,6 +42,14 @@ export const recipeList = [
       "A healthy and protein-packed salad that’s quick to prepare.",
       "Juicy grilled chicken pairs perfectly with fresh lettuce and sweet cherry tomatoes.",
       "Drizzled with olive oil for a simple yet satisfying meal.",
+    ],
+    steps: [
+      "Season the chicken breast with salt, pepper, and olive oil.",
+      "Grill the chicken on medium heat until fully cooked.",
+      "Slice the grilled chicken into strips.",
+      "Wash and chop the lettuce and cherry tomatoes.",
+      "Arrange the lettuce, cherry tomatoes, and chicken in a bowl.",
+      "Drizzle with olive oil and serve.",
     ],
   },
   {
@@ -50,6 +66,14 @@ export const recipeList = [
       "Made with crispy bacon, Parmesan cheese, and a silky egg-based sauce.",
       "Perfect for a quick dinner that feels gourmet.",
     ],
+    steps: [
+      "Cook the spaghetti according to package instructions.",
+      "Fry the bacon until crispy, then chop into small pieces.",
+      "In a bowl, whisk together eggs and grated Parmesan cheese.",
+      "Drain the pasta and add it to the pan with the bacon.",
+      "Remove from heat and quickly stir in the egg and cheese mixture.",
+      "Serve immediately with extra Parmesan on top.",
+    ],
   },
   {
     id: "04",
@@ -64,6 +88,14 @@ export const recipeList = [
       "A hearty and flavorful steak dish that’s perfect for special occasions.",
       "Seared to perfection with garlic, butter, and aromatic rosemary.",
       "Pair it with mashed potatoes or a side of vegetables for a complete meal.",
+    ],
+    steps: [
+      "Season the beef steak generously with salt and pepper.",
+      "Heat a pan with butter and add crushed garlic and rosemary.",
+      "Sear the steak on high heat for 2-3 minutes on each side.",
+      "Reduce the heat and cook to your desired doneness.",
+      "Let the steak rest for 5 minutes before slicing.",
+      "Serve with mashed potatoes or vegetables.",
     ],
   },
   {
@@ -80,6 +112,14 @@ export const recipeList = [
       "Quinoa and chickpeas provide protein, while avocado adds creaminess.",
       "Drizzle with your favorite dressing for a wholesome and satisfying meal.",
     ],
+    steps: [
+      "Cook the quinoa according to package instructions.",
+      "Rinse and drain the chickpeas, then season with olive oil and spices.",
+      "Slice the avocado and wash the spinach.",
+      "Assemble the bowl by layering quinoa, chickpeas, avocado, and spinach.",
+      "Drizzle with your favorite dressing.",
+      "Serve immediately and enjoy.",
+    ],
   },
   {
     id: "06",
@@ -94,6 +134,14 @@ export const recipeList = [
       "A light and flavorful seafood pasta dish that’s quick to make.",
       "Garlic, lemon, and butter create a zesty sauce for succulent shrimp.",
       "Perfect for a weeknight dinner or a fancy meal.",
+    ],
+    steps: [
+      "Cook the pasta according to package instructions.",
+      "In a pan, sauté minced garlic in butter until fragrant.",
+      "Add the shrimp and cook until pink and opaque.",
+      "Squeeze in lemon juice and season with salt and pepper.",
+      "Toss the cooked pasta in the shrimp and sauce.",
+      "Serve with a sprinkle of parsley and lemon wedges.",
     ],
   },
   {
@@ -110,6 +158,14 @@ export const recipeList = [
       "Made with earthy mushrooms, Parmesan cheese, and a splash of white wine.",
       "Ideal for a cozy dinner or a special occasion.",
     ],
+    steps: [
+      "Sauté chopped mushrooms in butter until tender.",
+      "Add Arborio rice and toast for 2-3 minutes.",
+      "Pour in white wine and stir until absorbed.",
+      "Gradually add warm broth, stirring until the rice is creamy.",
+      "Stir in grated Parmesan cheese and season with salt and pepper.",
+      "Serve hot with extra Parmesan on top.",
+    ],
   },
   {
     id: "08",
@@ -124,6 +180,14 @@ export const recipeList = [
       "A sweet and savory dish that’s both healthy and delicious.",
       "Salmon is glazed with a homemade teriyaki sauce made from soy sauce, ginger, and honey.",
       "Serve with steamed rice and vegetables for a complete meal.",
+    ],
+    steps: [
+      "Marinate the salmon in soy sauce, ginger, and honey for 15 minutes.",
+      "Heat a pan and sear the salmon skin-side down until crispy.",
+      "Flip the salmon and cook until done.",
+      "Pour the remaining marinade into the pan and reduce to a glaze.",
+      "Drizzle the glaze over the salmon.",
+      "Serve with steamed rice and vegetables.",
     ],
   },
   {
@@ -140,6 +204,14 @@ export const recipeList = [
       "The cake has a gooey, molten chocolate center that oozes out when cut.",
       "Best served warm with a scoop of vanilla ice cream.",
     ],
+    steps: [
+      "Melt dark chocolate and butter together.",
+      "Whisk eggs and sugar until fluffy, then fold in the chocolate mixture.",
+      "Add flour and mix until just combined.",
+      "Pour the batter into greased ramekins.",
+      "Bake at 375°F (190°C) for 10-12 minutes.",
+      "Serve warm with vanilla ice cream.",
+    ],
   },
   {
     id: "10",
@@ -154,6 +226,14 @@ export const recipeList = [
       "A quick and healthy breakfast or snack option.",
       "Layered with creamy Greek yogurt, crunchy granola, and fresh berries.",
       "Drizzle with honey for a touch of natural sweetness.",
+    ],
+    steps: [
+      "Layer Greek yogurt at the bottom of a glass.",
+      "Add a layer of granola on top of the yogurt.",
+      "Add a layer of fresh berries.",
+      "Repeat the layers until the glass is full.",
+      "Drizzle honey on top.",
+      "Serve immediately and enjoy.",
     ],
   },
   {
@@ -170,6 +250,14 @@ export const recipeList = [
       "Tender pork is stir-fried with pineapple, bell peppers, and a flavorful sauce.",
       "Serve with steamed rice for a satisfying meal.",
     ],
+    steps: [
+      "Marinate the pork in soy sauce and cornstarch for 15 minutes.",
+      "Stir-fry the pork until browned, then set aside.",
+      "In the same pan, stir-fry pineapple and bell peppers.",
+      "Add the pork back to the pan and pour in the sweet and sour sauce.",
+      "Cook until the sauce thickens.",
+      "Serve with steamed rice.",
+    ],
   },
   {
     id: "12",
@@ -184,6 +272,14 @@ export const recipeList = [
       "A hearty and comforting Italian classic that’s perfect for feeding a crowd.",
       "Layered with pasta, rich tomato sauce, ground beef, and melted cheese.",
       "Baked to perfection for a gooey and satisfying dish.",
+    ],
+    steps: [
+      "Cook the lasagna sheets according to package instructions.",
+      "Brown the ground beef and mix with tomato sauce.",
+      "Layer the lasagna sheets, beef mixture, and cheese in a baking dish.",
+      "Repeat the layers until the dish is full.",
+      "Top with cheese and bake at 375°F (190°C) for 30 minutes.",
+      "Let it cool slightly before serving.",
     ],
   },
   {
@@ -200,6 +296,14 @@ export const recipeList = [
       "Tender chicken is cooked in a spiced tomato and butter sauce.",
       "Best served with naan or steamed rice.",
     ],
+    steps: [
+      "Marinate the chicken in yogurt and spices for 30 minutes.",
+      "Cook the chicken in a pan until browned, then set aside.",
+      "In the same pan, melt butter and add tomato sauce and spices.",
+      "Add the chicken back to the pan and simmer in the sauce.",
+      "Stir in cream and cook until heated through.",
+      "Serve with naan or steamed rice.",
+    ],
   },
   {
     id: "14",
@@ -214,6 +318,14 @@ export const recipeList = [
       "A comforting and hearty British classic.",
       "Layered with ground lamb, vegetables, and creamy mashed potatoes.",
       "Baked until golden and bubbling for the ultimate comfort food.",
+    ],
+    steps: [
+      "Cook and mash the potatoes with butter and milk.",
+      "Brown the ground lamb in a pan with chopped carrots and peas.",
+      "Season the lamb mixture with salt, pepper, and herbs.",
+      "Layer the lamb mixture in a baking dish and top with mashed potatoes.",
+      "Bake at 375°F (190°C) for 20-25 minutes until golden.",
+      "Serve hot and enjoy.",
     ],
   },
   {
@@ -230,6 +342,14 @@ export const recipeList = [
       "Topped with a layer of caramelized sugar that cracks when tapped.",
       "Perfect for a fancy dinner or a special treat.",
     ],
+    steps: [
+      "Heat heavy cream and vanilla in a saucepan until warm.",
+      "Whisk egg yolks and sugar until pale, then slowly add the warm cream.",
+      "Strain the mixture and pour into ramekins.",
+      "Bake in a water bath at 325°F (160°C) for 40 minutes.",
+      "Chill the custards, then sprinkle sugar on top and caramelize with a torch.",
+      "Serve chilled.",
+    ],
   },
   {
     id: "16",
@@ -244,6 +364,14 @@ export const recipeList = [
       "A colorful and healthy vegetable dish from Provence, France.",
       "Made with zucchini, tomatoes, bell peppers, and eggplant.",
       "Perfect as a side dish or a light main course.",
+    ],
+    steps: [
+      "Slice the zucchini, tomatoes, bell peppers, and eggplant.",
+      "Sauté the vegetables in olive oil until tender.",
+      "Season with salt, pepper, and herbs.",
+      "Layer the vegetables in a baking dish.",
+      "Bake at 375°F (190°C) for 20-25 minutes.",
+      "Serve warm as a side or main dish.",
     ],
   },
   {
@@ -260,6 +388,14 @@ export const recipeList = [
       "Made with shrimp, chicken, and saffron-infused rice.",
       "Perfect for a festive meal or a family gathering.",
     ],
+    steps: [
+      "Sauté chicken and shrimp in a large pan until cooked.",
+      "Add chopped onions, garlic, and bell peppers.",
+      "Stir in rice and saffron, then add chicken broth.",
+      "Simmer until the rice is cooked and the liquid is absorbed.",
+      "Add peas and cook for an additional 5 minutes.",
+      "Serve hot with lemon wedges.",
+    ],
   },
   {
     id: "18",
@@ -274,6 +410,14 @@ export const recipeList = [
       "A quick and versatile dish that’s perfect for using up leftover rice.",
       "Scrambled eggs and spring onions add flavor and texture.",
       "Ideal as a side dish or a light meal on its own.",
+    ],
+    steps: [
+      "Heat oil in a pan and scramble the eggs.",
+      "Add cooked rice and stir to combine.",
+      "Add soy sauce and season with salt and pepper.",
+      "Stir in chopped spring onions.",
+      "Cook until everything is heated through.",
+      "Serve hot as a side or main dish.",
     ],
   },
   {
@@ -290,6 +434,13 @@ export const recipeList = [
       "Packed with tender clams, potatoes, and onions.",
       "Best served with crusty bread for dipping.",
     ],
+    steps: [
+      "Sauté onions and potatoes in butter until tender.",
+      "Add clams and cook until they open.",
+      "Pour in cream and simmer until the soup thickens.",
+      "Season with salt, pepper, and herbs.",
+      "Serve hot with crusty bread.",
+    ],
   },
   {
     id: "20",
@@ -304,6 +455,14 @@ export const recipeList = [
       "A popular Thai street food dish that’s both sweet and tangy.",
       "Made with rice noodles, tofu, peanuts, and a flavorful tamarind sauce.",
       "Garnished with lime and fresh herbs for a burst of freshness.",
+    ],
+    steps: [
+      "Soak rice noodles in warm water until soft.",
+      "Sauté tofu in a pan until golden.",
+      "Add the noodles and tamarind sauce to the pan.",
+      "Stir in peanuts and cook until heated through.",
+      "Garnish with lime wedges and fresh herbs.",
+      "Serve hot and enjoy.",
     ],
   },
 ];

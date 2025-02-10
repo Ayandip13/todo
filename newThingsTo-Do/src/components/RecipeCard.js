@@ -31,10 +31,10 @@ const RecipeCard = () => {
               elevation: 5,
               borderRadius: 8,
               marginVertical: 8,
-              marginHorizontal: 15,
+              marginHorizontal: -15,
               alignItems: "center",
-              paddingHorizontal: 1,
-              paddingVertical: 19,
+              paddingHorizontal: 7,
+              paddingVertical: 12,
             }}
           >
             <Image

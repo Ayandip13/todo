@@ -1,6 +1,5 @@
 import {
   Image,
-  StyleSheet,
   Text,
   View,
   SafeAreaView,
@@ -17,7 +16,7 @@ const RecipeDetailsScreen = ({ route }) => {
   const { item } = route.params;
 
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View
         style={{
           backgroundColor: "#3A7D44",
@@ -39,6 +38,7 @@ const RecipeDetailsScreen = ({ route }) => {
             <FontAwesome name={"heart-o"} size={28} color={"white"} />
           </Pressable>
         </SafeAreaView>
+
         <View
           style={{
             backgroundColor: "#fff",
@@ -89,50 +89,129 @@ const RecipeDetailsScreen = ({ route }) => {
             {item.description}
           </Text>
 
-          <View style={{ flexDirection: "row", marginTop: 190, left: -120 }}>
+          <View style={{ left: 11 }}>
+            <View style={{ flexDirection: "row", marginTop: 190, left: -120 }}>
+              <View
+                style={{
+                  backgroundColor: "#98D8EF",
+                  alignItems: "center",
+                  paddingHorizontal: 24,
+                  paddingVertical: 10,
+                  borderRadius: 7,
+                }}
+              >
+                <Ionicons name="time-outline" size={40} />
+                <Text style={{ fontWeight: "500" }}>{item.time}</Text>
+              </View>
+            </View>
+
+            <View style={{ flexDirection: "row", left: -10, bottom: 73 }}>
+              <View
+                style={{
+                  backgroundColor: "#FFA09B",
+                  alignItems: "center",
+                  paddingHorizontal: 24,
+                  paddingVertical: 10,
+                  borderRadius: 7,
+                }}
+              >
+                <Ionicons name="cafe" size={40} />
+                <Text style={{ fontWeight: "500" }}>{item.difficulty}</Text>
+              </View>
+            </View>
+
             <View
               style={{
-                backgroundColor: "orange",
-                alignItems: "center",
-                paddingHorizontal: 24,
-                borderRadius: 7,
-                paddingVertical: 10,
+                flexDirection: "row",
+                left: -120,
+                bottom: 145,
+                left: 100,
               }}
             >
-              <Ionicons name="time-outline" size={40} />
-              <Text style={{ fontWeight: "500" }}>{item.time}</Text>
+              <View
+                style={{
+                  backgroundColor: "#E7D283",
+                  alignItems: "center",
+                  paddingHorizontal: 28,
+                  paddingVertical: 10,
+                  borderRadius: 7,
+                }}
+              >
+                <FontAwesome name="fire" size={40} />
+                <Text style={{ fontWeight: "500" }}>{item.difficulty}</Text>
+              </View>
             </View>
           </View>
 
-          <View style={{ flexDirection: "row", left: -120, marginTop: 10 }}>
-            <View
-              style={{
-                backgroundColor: "orange",
-                alignItems: "center",
-                paddingHorizontal: 29.5,
-                borderRadius: 7,
-                paddingVertical: 10,
-              }}
-            >
-              <Ionicons name="cafe" size={40} />
-              <Text style={{ fontWeight: "500" }}>{item.difficulty}</Text>
-            </View>
-          </View>
+          <Text
+            style={{
+              fontSize: 20,
+              bottom: 120,
+              fontWeight: "bold",
+              right: 110,
+            }}
+          >
+            Ingradients:
+          </Text>
+          <View style={{width:150, height:0.5, backgroundColor:'#6A80B9', bottom:117, right:80, marginTop:8}}/>
 
-          <View style={{ flexDirection: "row", left: -120, marginTop: 10 }}>
-            <View
-              style={{
-                backgroundColor: "orange",
-                alignItems: "center",
-                paddingHorizontal: 33,
-                borderRadius: 7,
-                paddingVertical: 10,
-              }}
-            >
-              <FontAwesome name="fire" size={40}/>
-              <Text style={{ fontWeight: "500" }}>{item.difficulty}</Text>
-            </View>
-          </View>
+
+          {item.ingradients.map((ingradient) => {
+            return (
+              <View
+                style={{
+                  bottom: 110,
+                  alignSelf: "flex-start",
+                  marginLeft: 40,
+                  flexDirection: "row",
+                  marginTop:8,
+                  top:-105
+                }}
+              >
+                <Ionicons
+                  name="bulb-sharp"
+                  style={{ right: 7, bottom: 4 }}
+                  size={17}
+                  color={"#D84040"}
+                />
+                <Text style={{ textAlign: "left", right: 5, top: -1, fontSize:16 }}>
+                  {ingradient}
+                </Text>
+              </View>
+            );
+          })}
+
+          <Text
+            style={{
+              fontSize: 20,
+              bottom: 120,
+              fontWeight: "bold",
+              right: 130,
+              marginTop: 30,
+            }}
+          >
+            Steps:
+          </Text>
+          <View style={{width:150, height:0.5, backgroundColor:'#6A80B9', bottom:115, right:80, marginTop:5}}/>
+
+          {item.steps.map((step, index) => {
+            return (
+              <View
+                style={{
+                  bottom: 110,
+                  alignSelf: "flex-start",
+                  marginLeft: 40,
+                  flexDirection: "row",
+                  marginTop:10
+                }}
+              >
+                <Text style={{ textAlign: "left", right: 9, top: -1, fontWeight:"500", fontSize:19 }}>
+                {`${index+1}.  ${step}`}
+                </Text>
+              </View>
+            );
+          })}
+          <Text style={{fontSize:16, color:'#727D73', fontWeight:'800', bottom:20}}>Happy Cooking : &#128535;</Text>
         </View>
       </View>
     </ScrollView>
@@ -140,5 +219,3 @@ const RecipeDetailsScreen = ({ route }) => {
 };
 
 export default RecipeDetailsScreen;
-
-const styles = StyleSheet.create({});
