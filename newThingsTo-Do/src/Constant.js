@@ -15,6 +15,11 @@ export const recipeList = [
     time: "40 mins",
     difficulty: "Medium",
     calories: "420 cal",
+    description: [
+      "A refreshing and light dish perfect for seafood lovers.",
+      "The combination of fresh tuna, zesty lime juice, and creamy avocado creates a burst of flavors.",
+      "Ideal as an appetizer or a light meal, served with crispy crackers or toast.",
+    ],
   },
   {
     id: "02",
@@ -25,6 +30,11 @@ export const recipeList = [
     time: "30 mins",
     difficulty: "Easy",
     calories: "350 cal",
+    description: [
+      "A healthy and protein-packed salad that’s quick to prepare.",
+      "Juicy grilled chicken pairs perfectly with fresh lettuce and sweet cherry tomatoes.",
+      "Drizzled with olive oil for a simple yet satisfying meal.",
+    ],
   },
   {
     id: "03",
@@ -35,6 +45,11 @@ export const recipeList = [
     time: "25 mins",
     difficulty: "Medium",
     calories: "520 cal",
+    description: [
+      "A classic Italian dish that’s creamy, rich, and indulgent.",
+      "Made with crispy bacon, Parmesan cheese, and a silky egg-based sauce.",
+      "Perfect for a quick dinner that feels gourmet.",
+    ],
   },
   {
     id: "04",
@@ -45,6 +60,11 @@ export const recipeList = [
     time: "50 mins",
     difficulty: "Hard",
     calories: "600 cal",
+    description: [
+      "A hearty and flavorful steak dish that’s perfect for special occasions.",
+      "Seared to perfection with garlic, butter, and aromatic rosemary.",
+      "Pair it with mashed potatoes or a side of vegetables for a complete meal.",
+    ],
   },
   {
     id: "05",
@@ -55,6 +75,11 @@ export const recipeList = [
     time: "35 mins",
     difficulty: "Easy",
     calories: "400 cal",
+    description: [
+      "A vibrant and nutritious bowl packed with plant-based goodness.",
+      "Quinoa and chickpeas provide protein, while avocado adds creaminess.",
+      "Drizzle with your favorite dressing for a wholesome and satisfying meal.",
+    ],
   },
   {
     id: "06",
@@ -65,6 +90,11 @@ export const recipeList = [
     time: "30 mins",
     difficulty: "Medium",
     calories: "450 cal",
+    description: [
+      "A light and flavorful seafood pasta dish that’s quick to make.",
+      "Garlic, lemon, and butter create a zesty sauce for succulent shrimp.",
+      "Perfect for a weeknight dinner or a fancy meal.",
+    ],
   },
   {
     id: "07",
@@ -75,6 +105,11 @@ export const recipeList = [
     time: "45 mins",
     difficulty: "Medium",
     calories: "480 cal",
+    description: [
+      "A creamy and comforting Italian rice dish that’s full of umami flavors.",
+      "Made with earthy mushrooms, Parmesan cheese, and a splash of white wine.",
+      "Ideal for a cozy dinner or a special occasion.",
+    ],
   },
   {
     id: "08",
@@ -85,6 +120,11 @@ export const recipeList = [
     time: "40 mins",
     difficulty: "Medium",
     calories: "430 cal",
+    description: [
+      "A sweet and savory dish that’s both healthy and delicious.",
+      "Salmon is glazed with a homemade teriyaki sauce made from soy sauce, ginger, and honey.",
+      "Serve with steamed rice and vegetables for a complete meal.",
+    ],
   },
   {
     id: "09",
@@ -95,6 +135,11 @@ export const recipeList = [
     time: "30 mins",
     difficulty: "Hard",
     calories: "550 cal",
+    description: [
+      "A decadent dessert that’s sure to impress your guests.",
+      "The cake has a gooey, molten chocolate center that oozes out when cut.",
+      "Best served warm with a scoop of vanilla ice cream.",
+    ],
   },
   {
     id: "10",
@@ -105,6 +150,11 @@ export const recipeList = [
     time: "15 mins",
     difficulty: "Easy",
     calories: "300 cal",
+    description: [
+      "A quick and healthy breakfast or snack option.",
+      "Layered with creamy Greek yogurt, crunchy granola, and fresh berries.",
+      "Drizzle with honey for a touch of natural sweetness.",
+    ],
   },
   {
     id: "11",
@@ -115,6 +165,11 @@ export const recipeList = [
     time: "40 mins",
     difficulty: "Medium",
     calories: "520 cal",
+    description: [
+      "A classic Chinese dish that’s both tangy and sweet.",
+      "Tender pork is stir-fried with pineapple, bell peppers, and a flavorful sauce.",
+      "Serve with steamed rice for a satisfying meal.",
+    ],
   },
   {
     id: "12",
@@ -125,6 +180,11 @@ export const recipeList = [
     time: "60 mins",
     difficulty: "Hard",
     calories: "750 cal",
+    description: [
+      "A hearty and comforting Italian classic that’s perfect for feeding a crowd.",
+      "Layered with pasta, rich tomato sauce, ground beef, and melted cheese.",
+      "Baked to perfection for a gooey and satisfying dish.",
+    ],
   },
   {
     id: "13",
@@ -135,6 +195,11 @@ export const recipeList = [
     time: "50 mins",
     difficulty: "Medium",
     calories: "650 cal",
+    description: [
+      "A rich and creamy Indian curry that’s full of flavor.",
+      "Tender chicken is cooked in a spiced tomato and butter sauce.",
+      "Best served with naan or steamed rice.",
+    ],
   },
   {
     id: "14",
@@ -145,6 +210,11 @@ export const recipeList = [
     time: "55 mins",
     difficulty: "Medium",
     calories: "700 cal",
+    description: [
+      "A comforting and hearty British classic.",
+      "Layered with ground lamb, vegetables, and creamy mashed potatoes.",
+      "Baked until golden and bubbling for the ultimate comfort food.",
+    ],
   },
   {
     id: "15",
@@ -155,6 +225,11 @@ export const recipeList = [
     time: "45 mins",
     difficulty: "Hard",
     calories: "480 cal",
+    description: [
+      "A luxurious French dessert with a creamy custard base.",
+      "Topped with a layer of caramelized sugar that cracks when tapped.",
+      "Perfect for a fancy dinner or a special treat.",
+    ],
   },
   {
     id: "16",
@@ -165,6 +240,11 @@ export const recipeList = [
     time: "50 mins",
     difficulty: "Medium",
     calories: "350 cal",
+    description: [
+      "A colorful and healthy vegetable dish from Provence, France.",
+      "Made with zucchini, tomatoes, bell peppers, and eggplant.",
+      "Perfect as a side dish or a light main course.",
+    ],
   },
   {
     id: "17",
@@ -175,6 +255,11 @@ export const recipeList = [
     time: "60 mins",
     difficulty: "Hard",
     calories: "700 cal",
+    description: [
+      "A traditional Spanish rice dish that’s bursting with flavor.",
+      "Made with shrimp, chicken, and saffron-infused rice.",
+      "Perfect for a festive meal or a family gathering.",
+    ],
   },
   {
     id: "18",
@@ -185,6 +270,11 @@ export const recipeList = [
     time: "25 mins",
     difficulty: "Easy",
     calories: "400 cal",
+    description: [
+      "A quick and versatile dish that’s perfect for using up leftover rice.",
+      "Scrambled eggs and spring onions add flavor and texture.",
+      "Ideal as a side dish or a light meal on its own.",
+    ],
   },
   {
     id: "19",
@@ -195,6 +285,11 @@ export const recipeList = [
     time: "45 mins",
     difficulty: "Medium",
     calories: "500 cal",
+    description: [
+      "A creamy and comforting soup that’s perfect for chilly days.",
+      "Packed with tender clams, potatoes, and onions.",
+      "Best served with crusty bread for dipping.",
+    ],
   },
   {
     id: "20",
@@ -205,7 +300,12 @@ export const recipeList = [
     time: "35 mins",
     difficulty: "Medium",
     calories: "550 cal",
-  }
+    description: [
+      "A popular Thai street food dish that’s both sweet and tangy.",
+      "Made with rice noodles, tofu, peanuts, and a flavorful tamarind sauce.",
+      "Garnished with lime and fresh herbs for a burst of freshness.",
+    ],
+  },
 ];
 
 //Data for categories filter
