@@ -31,7 +31,7 @@ const PasswordGenerator = () => {
     if (lowerCase) str += "qwertyuiopasdfghjklzxcvbnm";
     if (upperCase) str += "QWERTYUIOPASDFGHJKLZMXNCBV";
     if (numbers) str += "1234567890";
-    if (charecters) str += "!@#$%>^&*_+;:|/<`~?,";
+    if (charecters) str += "!@#$%>^&*_+;:/<`~?,";
 
     // Generate password using the character set
     for (let i = 0; i < length; i++) {

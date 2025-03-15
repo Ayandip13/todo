@@ -7,8 +7,8 @@ import Weather from './src/Weather';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <PasswordGenerator/> */}
-      <Portfolio/>
+      <PasswordGenerator/>
+      {/* <Portfolio/> */}
       {/* <Weather/> */}
     </SafeAreaView>
   );

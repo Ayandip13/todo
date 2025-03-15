@@ -6,15 +6,23 @@ import {
   Pressable,
   ScrollView,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
 const RecipeDetailsScreen = ({ route }) => {
   const navigation = useNavigation();
+  const [favourite, setFavourite] = useState([])
 
   const { item } = route.params;
 
+  const handlePushMeth = () => {
+    setFavourite(()=>[...favourite, item])
+  };
+  console.log(favourite);
+  
+
+  
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View
@@ -34,7 +42,7 @@ const RecipeDetailsScreen = ({ route }) => {
           <Pressable onPress={() => navigation.goBack("RecipeCard")}>
             <FontAwesome name={"arrow-circle-left"} size={28} color={"white"} />
           </Pressable>
-          <Pressable>
+          <Pressable onPress={() => handlePushMeth()}>
             <FontAwesome name={"heart-o"} size={28} color={"white"} />
           </Pressable>
         </SafeAreaView>
@@ -153,8 +161,16 @@ const RecipeDetailsScreen = ({ route }) => {
           >
             Ingradients:
           </Text>
-          <View style={{width:150, height:0.5, backgroundColor:'#6A80B9', bottom:117, right:80, marginTop:8}}/>
-
+          <View
+            style={{
+              width: 150,
+              height: 0.5,
+              backgroundColor: "#6A80B9",
+              bottom: 117,
+              right: 80,
+              marginTop: 8,
+            }}
+          />
 
           {item.ingradients.map((ingradient) => {
             return (
@@ -164,8 +180,8 @@ const RecipeDetailsScreen = ({ route }) => {
                   alignSelf: "flex-start",
                   marginLeft: 40,
                   flexDirection: "row",
-                  marginTop:8,
-                  top:-105
+                  marginTop: 8,
+                  top: -105,
                 }}
               >
                 <Ionicons
@@ -174,7 +190,9 @@ const RecipeDetailsScreen = ({ route }) => {
                   size={17}
                   color={"#D84040"}
                 />
-                <Text style={{ textAlign: "left", right: 5, top: -1, fontSize:16 }}>
+                <Text
+                  style={{ textAlign: "left", right: 5, top: -1, fontSize: 16 }}
+                >
                   {ingradient}
                 </Text>
               </View>
@@ -192,7 +210,16 @@ const RecipeDetailsScreen = ({ route }) => {
           >
             Steps:
           </Text>
-          <View style={{width:150, height:0.5, backgroundColor:'#6A80B9', bottom:115, right:80, marginTop:5}}/>
+          <View
+            style={{
+              width: 150,
+              height: 0.5,
+              backgroundColor: "#6A80B9",
+              bottom: 115,
+              right: 80,
+              marginTop: 5,
+            }}
+          />
 
           {item.steps.map((step, index) => {
             return (
@@ -202,16 +229,33 @@ const RecipeDetailsScreen = ({ route }) => {
                   alignSelf: "flex-start",
                   marginLeft: 40,
                   flexDirection: "row",
-                  marginTop:10
+                  marginTop: 10,
                 }}
               >
-                <Text style={{ textAlign: "left", right: 9, top: -1, fontWeight:"500", fontSize:19 }}>
-                {`${index+1}.  ${step}`}
+                <Text
+                  style={{
+                    textAlign: "left",
+                    right: 9,
+                    top: -1,
+                    fontWeight: "500",
+                    fontSize: 19,
+                  }}
+                >
+                  {`${index + 1}.  ${step}`}
                 </Text>
               </View>
             );
           })}
-          <Text style={{fontSize:16, color:'#727D73', fontWeight:'800', bottom:20}}>Happy Cooking : &#128535;</Text>
+          <Text
+            style={{
+              fontSize: 16,
+              color: "#727D73",
+              fontWeight: "800",
+              bottom: 20,
+            }}
+          >
+            Happy Cooking : &#128535;
+          </Text>
         </View>
       </View>
     </ScrollView>
